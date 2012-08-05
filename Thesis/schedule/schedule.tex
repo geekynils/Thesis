@@ -1,0 +1,185 @@
+\documentclass[
+  a4wide,
+  smallheadings
+]{article}
+
+\usepackage{paralist}
+
+\usepackage{a4wide}
+\usepackage{supertabular}
+
+\begin{document}
+    
+%\section*{Project Schedule}
+
+\begin{supertabular}{|p{1.5cm}|p{2cm}|p{2cm}|p{8cm}|}
+    
+    \hline 
+    Week Nr. & Monday & Friday & Tasks \\
+    
+    \hline \hline
+    
+    8 & 21. Feb & 25. Feb &
+    \begin{compactitem}
+      \item Create Latex template, outline and title page. 
+      \item Put together reference list (Bibtex).
+    \end{compactitem}\\
+    
+    \hline
+    
+    9 & 28. Feb & 04. March &
+    \begin{compactitem}
+        \item Start with creating a solver, based on icoLagrangianFoam in OF 1.5 ext.
+        \item Figure out unit testing and integrate googles gtest framework.
+    \end{compactitem}\\
+
+    \hline
+
+    10 & 07. March & 11. March &
+    
+    \begin{compactitem}
+        \item Study the OF cloud classes and figure out which one can be used for
+              a simple one-way coupling.
+        \item Write the project schedule and hand it in.
+    \end{compactitem} \\
+
+    \hline
+
+    11 & 14. March & 18. March &
+    
+     \begin{compactitem}
+        \item Pack the mesh data so that it can be moved to the GPU. Write tests
+              and validate.
+        \item Do this with regard to performance, the data should be algined in
+              a way that requires a min amount of read write access to do the
+              tracking.
+        \item Think the whole particle tracking process through, create a flow
+              chart.
+        \item Learn Doxygen.
+    \end{compactitem} \\
+
+    \hline
+
+    12 & 21. March & 25. March &
+    
+     \begin{compactitem}
+        \item Pack all the particle data (position, velocity, etc) for the GPU
+              and validate.
+        \item Find relevant literature about CFD basics.
+        \item Reread basic CFD and start working on the CFD Basics section for
+              the documents.
+    \end{compactitem} \\
+    
+    \hline
+
+    13 & 28. March & 01. April &
+    
+     \begin{compactitem}
+        \item Get the first very basic case working where the tracking algo is
+              executed on the GPU.
+        \item Finish first draft of CFD basics.
+    \end{compactitem} \\
+    
+    \hline
+    
+    14 & 04. April & 08. April &
+    
+     \begin{compactitem}
+        \item Estimate how much time is spent for moving data between GPU and
+              CPU memory. How much faster is the calculation?
+        \item Start writing about the Eulerian-Lagrangian coupling.
+    \end{compactitem} \\
+
+    \hline
+
+    15 & 11. April & 15. April &
+    
+     \begin{compactitem}
+        \item Work on the demo cases (1D tunnel, torus). Is there need for
+              another case, maybe with more complicated cells?
+        \item Identify problems with the existing implementation, think of
+              improvement.
+    \end{compactitem} \\
+    
+    \hline
+    
+    16 & 18. April & 22. April &
+    
+     \begin{compactitem}
+        \item Based on the observations and exerience so far start rewriting
+              parts of the solver if needed.
+        \item Create diagrams and explain the implementation.
+    \end{compactitem} \\
+    
+    \hline
+    
+    17 & 25. April & 29. April &
+    
+     \begin{compactitem}
+        \item Work on the documentation. Write the OpenFOAM part, based on the 
+              Semesterproject. (Mesh representation in OF, most important classes
+              basic data structures, such as lists and linked lists, etc)
+    \end{compactitem} \\
+    
+    \hline
+    
+    18 & 02. May & 06. May &
+    
+     \begin{compactitem}
+        \item Documenation: Add the part about GPU computing.
+        \item Finish a first draft and give it to somebody to read.
+    \end{compactitem} \\
+    
+    \hline
+    
+    19 & 09. May & 13. May &
+    
+     \begin{compactitem}
+        \item 
+    \end{compactitem} \\
+    
+    \hline
+    
+    20 & 16. May & 20. May &
+    
+     \begin{compactitem}
+        \item
+    \end{compactitem} \\
+    
+    \hline
+    
+    21 & 23. May & 27. May &
+    
+     \begin{compactitem}
+        \item
+    \end{compactitem} \\
+    
+    \hline
+    
+    22 & 30. May & 03. June &
+    
+     \begin{compactitem}
+        \item
+    \end{compactitem} \\
+    
+    \hline
+    
+    23 & 06. June & 10. June &
+    
+     \begin{compactitem}
+        \item
+    \end{compactitem} \\
+    
+    \hline
+    
+    24 & 13. June & 17. June &
+    
+    \begin{compactitem}
+        \item
+    \end{compactitem} \\
+    
+    \hline
+
+\end{supertabular}
+    
+\end{document}

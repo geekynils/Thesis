@@ -1,0 +1,41 @@
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Motivation}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Project Goal}{1}{subsection.1.2}
+\contentsline {section}{\numberline {2}OpenFOAM}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Introduction}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Mesh Representation}{2}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}The Lagrangian Framework}{2}{subsection.2.3}
+\contentsline {paragraph}{Usage of curiously recurring template patterns}{3}{section*.5}
+\contentsline {subsection}{\numberline {2.4}Parallelization and Support for GPUs}{5}{subsection.2.4}
+\contentsline {section}{\numberline {3}The Particle Tracking Algorithm}{6}{section.3}
+\contentsline {subsection}{\numberline {3.1}Basic Particle Tracking Algorithm}{6}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Modified Tracking Algorithm}{7}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Implementation in OpenFOAM (solidParticle Library)}{8}{subsection.3.3}
+\contentsline {section}{\numberline {4}GPU Computing}{9}{section.4}
+\contentsline {subsection}{\numberline {4.1}Introduction}{9}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Architecture of Modern GPUs}{9}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}CUDA}{10}{subsection.4.3}
+\contentsline {section}{\numberline {5}Software Development}{12}{section.5}
+\contentsline {subsection}{\numberline {5.1}Software Design}{12}{subsection.5.1}
+\contentsline {paragraph}{Mesh Data}{12}{section*.6}
+\contentsline {paragraph}{Particle Data}{13}{section*.7}
+\contentsline {paragraph}{Abstraction and Data Encapsulation}{13}{section*.8}
+\contentsline {subsection}{\numberline {5.2}Complete Particle Engine}{14}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Data Reduction}{16}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Tools and Validation}{17}{subsection.5.4}
+\contentsline {section}{\numberline {6}Test Cases and Results}{18}{section.6}
+\contentsline {subsection}{\numberline {6.1}Tunnel}{18}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Torus}{18}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Measurements}{19}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Performance Analysis of Computational Kernels}{21}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Memory Requirements}{22}{subsection.6.5}
+\contentsline {section}{\numberline {7}Conclusion and Future Work}{24}{section.7}
+\contentsline {section}{\numberline {8}Summaries of Related Works}{25}{section.8}
+\contentsline {subsection}{\numberline {8.1}Nvidia's Particles Demo}{25}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}The Lagrangian Particles in the EM Driven Turbulent Flow with Fine Mesh}{25}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Complex Chemistry Modeling of Diesel Spray Combustion}{25}{subsection.8.3}
+\contentsline {subsection}{\numberline {8.4}Porting Large Fortran Codebases to GPUs}{26}{subsection.8.4}
+\contentsline {section}{\numberline {9}Appendix}{27}{section.9}
+\contentsline {subsection}{\numberline {9.1}Assertions on the GPU}{27}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Curriculum Vitae}{28}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}Project Definition}{28}{subsection.9.3}

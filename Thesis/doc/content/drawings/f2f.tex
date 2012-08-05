@@ -1,0 +1,77 @@
+\begin{tikzpicture}
+
+% Coords of the Axes
+\coordinate (Zero)  at (0,0);
+%\coordinate [label=below:$x$](Xend)  at (10,0);
+%\coordinate [label=right:$y$](Yend)  at (0,10);
+
+% Coords for cell A
+\coordinate (f1start) at (0.5,2);
+\coordinate (f1end) at (12,3);
+\coordinate (f2start) at (10,1);
+\coordinate (f2end) at (11,8);
+\coordinate (f3start) at (12,7);
+\coordinate (f3end) at (1,8);
+\coordinate (f4start) at (3,9);
+\coordinate (f4end) at (1,1);
+
+% Intersection between the cell faces: k, l, m, n
+% Syntax note: Do NOT make a space between the coord and the --!
+% Bottom left
+\coordinate (k) at (intersection of f1start--f1end and f4start--f4end);
+% Bottom right
+\coordinate [label={below right:cell b}] 
+	(l) at (intersection of f1start--f1end and f2start--f2end);
+% Top right
+\coordinate [label={below left:cell a},label={below right:cell c}]  
+	(m) at (intersection of f2start--f2end and f3start--f3end);
+% Top left
+\coordinate (n) at (intersection of f3start--f3end and f4start--f4end);
+
+% Add the face indexes, note that only coordinates and nodes can have labels
+\coordinate [label=below:$0$] (0) at ($ (k)!.5!(l) $);
+\fill[black] (0) circle (2pt);
+\coordinate [label=left:$1$, label={below right:$\mathbf{C_f}$}] 
+	(1) at ($ (l)!.5!(m) $);
+\fill[black] (1) circle (2pt);
+\coordinate [label=above:$2$] (2) at ($ (m)!.5!(n) $);
+\fill[black] (2) circle (2pt);
+\coordinate [label=left:$3$] (3) at ($ (n)!.5!(k) $);
+\fill[black] (3) circle (2pt);
+
+% Centroid
+\coordinate (sum) at  ($ (k)+(l)+(m)+(n) $);
+\coordinate [label=left:$\mathbf{C_c}$] (Cc) at ($ 1/4*(sum) $);
+\fill[black] (Cc) circle (2pt);
+
+% Draw the lines, which define cell A, B and C
+%\draw [thin,->] (Zero) -- (Xend);
+%\draw [thin,->] (Zero) -- (Yend);
+\draw (f1start) -- (f1end);
+\draw (f2start) -- (f2end);
+\draw (f3start) -- (f3end);
+\draw (f4start) -- (f4end);
+
+% Cf
+\coordinate[label=right:$\vec{S_f}$] (S) at ($(1)!0.5! -90:(m)$);
+\draw [->,dashed] (1) -- (S);
+
+% Particle movement
+\coordinate[label=right:$\textbf{a}$] (a) at (8,6);
+\coordinate[label=right:$\textbf{b}$] (b) at (12,2);
+
+\coordinate[label=right:$\textbf{p}$] (p) at 
+	(intersection of a--b and f2start--f2end);
+\coordinate[label=above:$\textbf{p'}$] (p_) at 
+	(intersection of a--b and f1start--f1end);
+
+\draw[fill=white,thick,->] (a) -- (b);
+
+\draw[fill=white,dashed,->] (Cc) -- (b);
+
+\filldraw[fill=white] (a) circle (2pt);
+\filldraw[fill=white] (p) circle (2pt);
+\filldraw[fill=white] (p_)circle (2pt);
+\filldraw[fill=white] (b) circle (2pt);
+
+\end{tikzpicture}

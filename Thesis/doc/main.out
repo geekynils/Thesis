@@ -1,0 +1,37 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Motivation}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Project Goal}{section.1}% 3
+\BOOKMARK [1][-]{section.2}{OpenFOAM}{}% 4
+\BOOKMARK [2][-]{subsection.2.1}{Introduction}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.2}{Mesh Representation}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.3}{The Lagrangian Framework}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.4}{Parallelization and Support for GPUs}{section.2}% 8
+\BOOKMARK [1][-]{section.3}{The Particle Tracking Algorithm}{}% 9
+\BOOKMARK [2][-]{subsection.3.1}{Basic Particle Tracking Algorithm}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.2}{Modified Tracking Algorithm}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.3}{Implementation in OpenFOAM \(solidParticle Library\)}{section.3}% 12
+\BOOKMARK [1][-]{section.4}{GPU Computing}{}% 13
+\BOOKMARK [2][-]{subsection.4.1}{Introduction}{section.4}% 14
+\BOOKMARK [2][-]{subsection.4.2}{Architecture of Modern GPUs}{section.4}% 15
+\BOOKMARK [2][-]{subsection.4.3}{CUDA}{section.4}% 16
+\BOOKMARK [1][-]{section.5}{Software Development}{}% 17
+\BOOKMARK [2][-]{subsection.5.1}{Software Design}{section.5}% 18
+\BOOKMARK [2][-]{subsection.5.2}{Complete Particle Engine}{section.5}% 19
+\BOOKMARK [2][-]{subsection.5.3}{Data Reduction}{section.5}% 20
+\BOOKMARK [2][-]{subsection.5.4}{Tools and Validation}{section.5}% 21
+\BOOKMARK [1][-]{section.6}{Test Cases and Results}{}% 22
+\BOOKMARK [2][-]{subsection.6.1}{Tunnel}{section.6}% 23
+\BOOKMARK [2][-]{subsection.6.2}{Torus}{section.6}% 24
+\BOOKMARK [2][-]{subsection.6.3}{Measurements}{section.6}% 25
+\BOOKMARK [2][-]{subsection.6.4}{Performance Analysis of Computational Kernels}{section.6}% 26
+\BOOKMARK [2][-]{subsection.6.5}{Memory Requirements}{section.6}% 27
+\BOOKMARK [1][-]{section.7}{Conclusion and Future Work}{}% 28
+\BOOKMARK [1][-]{section.8}{Summaries of Related Works}{}% 29
+\BOOKMARK [2][-]{subsection.8.1}{Nvidia's Particles Demo}{section.8}% 30
+\BOOKMARK [2][-]{subsection.8.2}{The Lagrangian Particles in the EM Driven Turbulent Flow with Fine Mesh}{section.8}% 31
+\BOOKMARK [2][-]{subsection.8.3}{Complex Chemistry Modeling of Diesel Spray Combustion}{section.8}% 32
+\BOOKMARK [2][-]{subsection.8.4}{Porting Large Fortran Codebases to GPUs}{section.8}% 33
+\BOOKMARK [1][-]{section.9}{Appendix}{}% 34
+\BOOKMARK [2][-]{subsection.9.1}{Assertions on the GPU}{section.9}% 35
+\BOOKMARK [2][-]{subsection.9.2}{Curriculum Vitae}{section.9}% 36
+\BOOKMARK [2][-]{subsection.9.3}{Project Definition}{section.9}% 37

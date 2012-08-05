@@ -1,0 +1,124 @@
+\documentclass[
+  10pt,
+  a4wide,
+  double-sided,
+  smallheadings
+]{article}
+\usepackage{a4wide}
+\usepackage{microtype} % more pretty letters
+\usepackage{graphicx}
+\usepackage[absolute]{textpos} % Required to place images, for example the logo 
+                               % on the title page
+\textblockorigin{0cm}{0cm}
+\usepackage{hyperref}
+\usepackage[ansinew]{inputenc} % German umlauts
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{float}
+\usepackage{tikz}
+\usetikzlibrary{calc,through,backgrounds}
+\usepackage{fancyvrb}
+\VerbatimFootnotes % Required, otherwise verbatim does not work in footnotes!
+\usepackage{listings}
+\usepackage{nomencl}
+\usepackage{theorem}
+\usepackage{pdfpages}
+
+% \makenomenclature
+
+\definecolor{Brown}{cmyk}{0,0.81,1,0.60}
+\definecolor{OliveGreen}{cmyk}{0.64,0,0.95,0.40}
+\definecolor{CadetBlue}{cmyk}{0.62,0.57,0.23,0}
+\definecolor{LightGray}{gray}{0.9}
+
+\newtheorem{algo}{Algorithm}
+\newtheorem{prob}{Problem}
+\newtheorem{desc}{Description}
+
+% Bold vectors
+\renewcommand{\vec}[1]{\mathbf{#1}}
+
+% Lines in the title page
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+% PDF related settings
+\hypersetup{
+  backref,
+  colorlinks=false,
+  pdfborder=0 0 0,
+  pdftitle=Lagrangian Particle Tracking on a GPU.
+  pdfauthor=Nils Br\"{u}nggel
+}
+
+% Prevent splitting footnotes.
+\interfootnotelinepenalty=10000
+
+% Change the title from references to bibliography
+\renewcommand\refname{Bibliography}
+
+\begin{document}
+
+% ------------------------------------------------------------------------------
+% Listing configuration
+\lstset{
+    language=C,                             % Code langugage
+    basicstyle=\small\ttfamily,             % Code font
+    keywordstyle=\color{OliveGreen},        % Keywords font ('*' = uppercase)
+    commentstyle=\color{gray},              % Comments font
+    numbers=left,                           % Line nums position
+    numberstyle=\tiny,                      % Line-numbers fonts
+    stepnumber=1,                           % Step between two line-numbers
+    numbersep=5pt,                          % How far are line-numbers from code
+    backgroundcolor=\color{LightGray},      % Choose background color
+    frame=none,                             % A frame around the code
+    tabsize=2,                              % Default tab size
+    captionpos=b,                           % Caption-position = bottom
+    breaklines=true,                        % Automatic line breaking?
+    breakatwhitespace=false,                % Automatic breaks only at whitespaces?
+    showspaces=false,                       % Dont make spaces visible
+    showtabs=false,                         % Dont make tabls visible
+    % columns=flexible,                     % Column format BREAKS MONOSPACE!
+    morekeywords={                          % C++
+        class,
+        template,
+        public,
+        private,
+        __global__,
+        __device__
+    }
+}
+% ------------------------------------------------------------------------------
+    
+\include{content/title}
+
+\pagenumbering{Roman}       % Roman numbering for the title and the abstract.
+\tableofcontents
+\newpage
+\listoffigures
+\newpage
+
+\include{content/self}
+\include{content/ack}
+\include{content/abstract}
+
+% \printnomenclature
+
+\pagenumbering{arabic}      % Arabic numbering later
+
+% \include{content/summary}
+\include{content/intro}
+\include{content/openFoam}
+\include{content/particleTracking}
+\include{content/gpu}
+\include{content/coding}
+\include{content/results}
+\include{content/conclusion}
+\include{content/summaries}
+
+\newpage
+\include{content/appendix}
+
+\newpage
+\bibliographystyle{plain}
+\bibliography{bib/ref}
+
+\end{document}

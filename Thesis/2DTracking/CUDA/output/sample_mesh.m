@@ -1,0 +1,12 @@
+hold;
+title "Mesh";
+line([ 1 3], [1 0.5], 'LineStyle', '-', 'Color', [0 0 0]);
+line([ 3 3.75], [0.5 2.5], 'LineStyle', '-', 'Color', [0 0 0]);
+line([ 1.5 3.75], [3.5 2.5], 'LineStyle', '-', 'Color', [0 0 0]);
+line([ 1 1.5], [1 3.5], 'LineStyle', '-', 'Color', [0 0 0]);
+line([ 3 5.5], [0.5 0.75], 'LineStyle', '-', 'Color', [0 0 0]);
+line([ 5.5 3.75], [0.75 2.5], 'LineStyle', '-', 'Color', [0 0 0]);
+line([ 3.75 4.5], [2.5 3.75], 'LineStyle', '-', 'Color', [0 0 0]);
+line([ 2.5 4.5], [4 3.75], 'LineStyle', '-', 'Color', [0 0 0]);
+line([ 1.5 2.5], [3.5 4], 'LineStyle', '-', 'Color', [0 0 0]);
+quiver([2.75 3.5 ], [2 1.75 ], [0.75 -0.5 ], [-0.25 1.25 ],0);

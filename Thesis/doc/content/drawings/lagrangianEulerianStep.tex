@@ -1,0 +1,64 @@
+\begin{tikzpicture}
+
+\pgfmathsetmacro{\vecLen}{0.6}
+
+    \draw[step=1] (0, 0) grid (4, 3);
+
+    \coordinate (a) at (0.4, 0.3);
+    \coordinate (b) at ($(a) +(6:4)$);
+    
+    \draw[color=red, thick, ->] (a) -- (b);
+    
+    \def\angle{pi/8}
+    \pgfmathsetmacro{\dang}{deg(\angle)}
+    \draw (0, 0) grid (4, 3);
+
+    % Mentally retarded, but no other way since counter or so do not work with 
+    % the TexLive 2010 version. For each can have two lists which needs to be 
+    % seperated using the /.
+    
+    \foreach \x/\k in {0.5/0, 1.5/1, 2.5/2, 3.5/3} {
+
+        \foreach \y in {0.5, 1.5, 2.5} {
+
+            \node at (\x, \y)[circle, fill=gray, scale=0.25] {};
+
+            \draw[color=gray,thin,->]  (\x, \y) -- ++(\k*\dang:0.6);
+
+        }
+
+    }
+    
+    
+%    \foreach \x in {0.5, 1.5, 2.5, 3.5} {
+%        \foreach \y in {0.5, 1.5, 2.5} {
+%            \node at (\x, \y)[circle, fill=black, scale=0.25] {};
+%            \node end at 
+%            \draw[fill=red, thin, ->] (\x, \y) -- (\x, \y) + ($.5/\cos(Pi/8)$, $- 0.5 * \tan(Pi/8)$);
+%        }
+%    }
+    
+    % vector field in cell
+    
+%     \coordinate[label=below:cell a] (vertexA) at (0, 6);
+%     \coordinate[label={above right:cell b}, label={below right:cell c}] 
+%                (vertexB) at (2, 2);
+%     \coordinate(vertexC) at (6, 4);
+%     \coordinate(vertexD) at (12, 4);
+% 
+%     \draw (vertexA) -- (vertexB);
+%     \draw (vertexB) -- (vertexC);
+%     \draw (vertexB) -- (vertexD);
+% 
+%     % Cell centroids
+%     \coordinate (centroidCellA) at ($ 1/3*($(vertexA)+(vertexB)+(vertexC)$) $);
+% 
+%     % First estimation of particle movement
+%     \coordinate[label=right:$\textbf{a}$] (a) at (2.5, 2.5);
+%     \coordinate[label=right:$\textbf{b}$] (b) at (12, 8);
+% 
+%     \draw[fill=white,thick,->] (a) -- (b);
+%     \filldraw[fill=white] (a) circle (2pt);
+%     \filldraw[fill=white] (b) circle (2pt);
+
+\end{tikzpicture}

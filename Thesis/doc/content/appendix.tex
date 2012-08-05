@@ -1,0 +1,116 @@
+\section{Appendix}
+
+\subsection{Assertions on the GPU}
+
+CUDA does not come with support for assertions as they are offered by the C standard library. Using assertions during the development helped caching bugs early. Assertions were implemented using the C preprocessor.
+
+\begin{lstlisting}
+// This flag is read at the beginning of every kernel if it's not true the
+// kernel returns. This way no more kernels are launched once an assertion
+// fails.
+__device__ bool run=true;
+
+// Trap cannot be used directly, because if the kernel is interrupted with
+// trap the output of printf is never transferred to the host and never
+// printed out.
+#define cudaAssert(condition) \
+if (!(condition)){ printf("Assertion %s failed!\n", #condition); run=false; }
+
+#define checkRun if(!run) asm("trap;");
+
+#define info(x, ...) printf(x, __VA_ARGS__)
+
+#else
+
+#define cudaAssert(condition)
+#define checkRun
+#define info(x, ...)
+
+#endif
+
+#endif
+\end{lstlisting}
+
+Using the assertion macro requires the programmer to add \verb+checkRun+ at the beginning of every kernel. The macro itself can be used just like the C assertion macro by just adding \verb+cudaAssert(condition)+ to test weather a condition expected to be true is really true. Note that the assertions are only evaluated if \verb+DEBUG+ is defined. This way there is no overhead if debugging is turned off.
+
+\subsection{Curriculum Vitae}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{  l  l  }
+
+        \textsc{Education} & \\
+        \\
+        University of Applied Science, Lucerne & \\
+        \textbf{MSc Engineering} & 2009 - present   \\
+        
+        \\
+        
+        University of Applied Science, Lucerne & \\
+        \textbf{BSc with specialization in Software Systems} & 2005 - 2009 \\
+        Thesis: Web Crawler for Recommender Systems & \\
+        
+        \\
+        
+        Wirtschaftsmittelschule Aarau & 2000 - 2003 \\
+        
+        \\
+        \\
+        
+        \textsc{Work Experience} & \\
+        
+        \\
+        
+        \textbf{AdNovum Informatik AG, Z\"urich} & \\
+        Work student, part time & 2010 \\
+        Implementing a CAPTCHA system for nevisAuth. & \\
+        
+        \\
+        
+        \textbf{University of Applied Science - CC D3S, Lucerne} & \\
+        Assistant, part time & 2009 \\
+        Working on different software projects. Assisting in a JavaEE class. & \\
+        \\
+        
+        \textbf{ETHZ - Chair of Systems Design, Z\"urich} & \\
+        System administrator, part time & 2006 - 2008\\
+        Administration and support of the IT-infrastructure. Web Development with Ruby on Rails. & \\
+        
+        \\
+        
+        \textbf{crossmediacomm AG, Aarau} & \\
+        Internship & 2003-2004 \\
+        
+    \end{tabular}
+    \label{table:cv}
+\end{table}
+
+
+\subsection{Project Definition}
+\label{sec:projectDef}
+
+\subsubsection*{Introduction}
+
+In computational fluid dynamics (CFD) a number of PDEs have to be solved. In addition it might be necessary to include particle-effects which is often accomplished by the probability density functions (PDF) method. This allows more accurate simulation of cumbustion-processes like in diesel-engines or aircraft-engines. During the course of the computation each of millions of particles has to be tracked along its path (particle tracking). The operations applied for each particle are simple and could
+therefore be executed by the GPU in parallel.
+
+OpenFOAM (Open Field Operation and Manipulation) is a C++ framework for the simulation of fluids, the interaction of fluids with solids and many more problems. OpenFOAM includes approx. 190 standard programs which could be easily adapted and even extended.
+Since 2004 OpenFOAM is distributed under the GPL. Its user base is gradually increasing not only in the research- and education-area but also in the industrial field.
+
+
+\subsubsection*{Job description}
+
+During the course of the Master Diploma Work an OpenFOAM-Library has to be developed which executes the computationally intensive operations of particle tracking on the graphical processing unit (GPU), using CUDA. Starting form the second consolidation project (in spring semester 2010), where a 2D-version of the particle tracking outside OpenFOAM was realized, the following tasks have to be done for the master thesis:
+
+\begin{enumerate}
+    \item Extend the Algorithm to 3D where cells could be tetra-, hexa- and in general polyhedra. Assume that the velocity field can be computed at any position (by calling an already existing OpenFOAM-method)
+    \item Design a C++-class for OpenFOAM which fetches all necessary data for particle tracking (like position and velocity of each particle, what cell contains which particles, the geometry of the cells, etc.) and converts/adapts the data structures for efficient use on the GPU.
+    \item For each cell in the simulation domain, move the particles in this cell with the given velocity for a certain time-step. Assume, that the velocity (see above) is known at each point.
+    \item If computations can be done in parallel, implement them on the GPU.
+    \item The correctness of the implementation shall be tested using two examples (1. one dimensional pipe, 2. torus)
+    \item Compare Your results with the version running solely on the CPU.
+    \item Document Your code accordingly (Doxygen).
+    \item Make Your code and documentation easy accessible (via git- or svn-repository).
+\end{enumerate}
+
+For the implementation use a recent version of OpenFOAM such as 1.7.x or 1.6-ext.

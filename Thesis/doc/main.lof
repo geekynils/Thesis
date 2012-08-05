@@ -1,0 +1,18 @@
+\contentsline {figure}{\numberline {1}{\ignorespaces Class diagram outlining the solidParticle library.}}{3}{figure.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces Illustration of circular dependencies in OpenFOAM using templates and inheritance.}}{3}{figure.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces Example situation in two dimensions illustrates the particle tracking algorithm.}}{6}{figure.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Two dimensional illustration of a particle trajectory through multiple cells.}}{8}{figure.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Nvidia's Fermi architecture, taken from \cite {fermiWhitepaper}.}}{10}{figure.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces Cell centres arranged in memory.}}{12}{figure.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces Mesh data layout in memory.}}{12}{figure.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Owner and neighbour data of the particle tunnel case.}}{13}{figure.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Simplified class diagram of the GPU tracking library.}}{14}{figure.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces Complete particle tracking sequence.}}{15}{figure.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Reducing the particle labels array to those which sill need tracking.}}{16}{figure.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces Width plot of the GPU time spent for calculating lambdas. The CPU is used for data reduction.}}{16}{figure.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces Particle tunnel with randomly distributed particles.}}{18}{figure.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces A torus defined by surface revolution of a circle.}}{18}{figure.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces A tetrahedral mesh generated in a torus.}}{19}{figure.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces Plot showing the execution time for a growing number of particles.}}{20}{figure.16}
+\contentsline {figure}{\numberline {17}{\ignorespaces Width plot showing the time of kernel functions and memcpy operations.}}{21}{figure.17}
+\contentsline {figure}{\numberline {18}{\ignorespaces Width plot showing the actual time spent on the GPU.}}{21}{figure.18}

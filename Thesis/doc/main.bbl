@@ -1,0 +1,170 @@
+\begin{thebibliography}{10}
+
+\bibitem{occupancySpreadsheet}
+{CUDA GPU Occupancy Calculator}.
+\newblock
+  \url{http://developer.download.nvidia.com/compute/cuda/CUDA_Occupancy_calculator.xls}.
+
+\bibitem{fparser}
+{f2py - Fortran to Python Interface Generator}.
+\newblock \url{http://code.google.com/p/f2py/}.
+
+\bibitem{octree}
+{Octree library in OpenFOAM}.
+\newblock \url{http://foam.sf.net/doc/Doxygen/html/classFoam_1_1octree.html}.
+
+\bibitem{innovativeCFDGrid}
+{Quick Overview of CFD Grid Terminology}.
+\newblock \url{http://www.innovative-cfd.com/cfd-grid.html}.
+
+\bibitem{pg08}
+{\em {OpenFOAM Programmers Guide}}.
+\newblock OpenCFD UK, 2008.
+
+\bibitem{ug08}
+{\em {OpenFOAM Users Guide}}.
+\newblock OpenCFD UK, 2008.
+
+\bibitem{cusp}
+{CUSP - Generic Parallel Algorithms for Sparse Matrix and Graph Computations}.
+\newblock \url{http://code.google.com/p/cusp-library/}, 2011.
+
+\bibitem{eulerianLagrangian}
+{Lagrangian and Eulerian specification of the flow field --- Wikipedia, The
+  Free Encyclopedia}.
+\newblock
+  \url{http://en.wikipedia.org/wiki/Lagrangian_and_Eulerian_specification_of_the_flow_field},
+  2011.
+
+\bibitem{computeprof}
+{Nvidia Compute Visual Profiler}.
+\newblock \url{http://developer.nvidia.com/content/nvidia-visual-profiler},
+  2011.
+
+\bibitem{openfoamParallel}
+Running applications in parallel.
+\newblock
+  \url{http://www.openfoam.com/docs/user/running-applications-parallel.php},
+  2011.
+
+\bibitem{thrust}
+{Thrust - Code at the speed of light}.
+\newblock \url{http://code.google.com/p/thrust/}, 2011.
+
+\bibitem{cpp}
+Pete Becker.
+\newblock {\em {Working Draft, Standard for Programming Language C++}}.
+\newblock ISO, 2011.
+
+\bibitem{fusionWhitepaper}
+Nathan Brookwood.
+\newblock {AMD FusionTM Family of APUs: Enabling a Superior, Immersive PC
+  Experience}.
+\newblock
+  \url{http://www.amd.com/us/Documents/48423_fusion_whitepaper_WEB.pdf}, 2010.
+
+\bibitem{coplien95}
+James~O. Coplien.
+\newblock Curiously recurring template patterns.
+\newblock {\em C++ Rep.}, 7:24--27, February 1995.
+
+\bibitem{portingCuda10}
+Andrew Corrigan and Rainald L{\"o}hner.
+\newblock {Porting Large Fortran Codebases to GPUs}.
+\newblock Technical report, Center for Computational Fluid Dynamics, 2010.
+
+\bibitem{cudabook}
+{David B. Kirk and Wen-mei W. Hwu}.
+\newblock {\em Programming Massively Parallel Processors: A Hands-on Approach}.
+\newblock Morgan Kaufmann, 2010.
+
+\bibitem{cudaparticles}
+Simon Green.
+\newblock {Particle Simulation using CUDA}, 2010.
+
+\bibitem{jasak96}
+Hrvoje Jasak.
+\newblock {\em {Error Analysis and Estimation for the Finite Volume Method with
+  Applications to Fluid Flows}}.
+\newblock PhD thesis, Imperial College, 1996.
+
+\bibitem{jasakMeshHandling}
+Hrvoje Jasak.
+\newblock {Polyhedral Mesh Handling in OpenFOAM}, 2005.
+
+\bibitem{liu11}
+YUAN LIU.
+\newblock {Hybrid Parallel Computation of OpenFOAM Solver on Multi-Core Cluster
+  Systems}.
+\newblock Master's thesis, KTH Information and Communication Technology, 2011.
+
+\bibitem{speedit}
+Vratis ltd.
+\newblock {SpeedIT Tools: Beyond Acceleration}.
+\newblock \url{http://vratis.com/speedITblog/}, 2011.
+
+\bibitem{macpherson08}
+Graham~B. Macpherson, Niklas Nordin, and Henry~G. Weller.
+\newblock {Particle tracking in unstructured, arbitrary polyhedral meshes for
+  use in CFD and molecular dynamics}.
+\newblock {\em Communications in Numerical Methods in Engineering}, 2008.
+
+\bibitem{thrustRadixSort}
+Satish N., Harris M., and Garland M.
+\newblock {Designing Efficient Sorting Algorithms for Manycore GPUs}.
+\newblock In {\em Proceedings of IEEE International Parallel and Distributed
+  Processing Symposium 2009}, 2009.
+
+\bibitem{nordin00}
+Niklas Nordin.
+\newblock {\em {Complex Chemistry Modeling of Diesel Spray Combustion}}.
+\newblock PhD thesis, 2000.
+
+\bibitem{fermiWhitepaper}
+Nvidia.
+\newblock {\em {Fermi Whitepaper}}, 2009.
+
+\bibitem{cudaBestPractices}
+Nvidia.
+\newblock {\em {CUDA C Best Practices Guide 4.0}}, 2011.
+
+\bibitem{cudaguide}
+Nvidia.
+\newblock {\em {CUDA C Programming Guide 4.0}}, 2011.
+
+\bibitem{ptxMan}
+Nvidia.
+\newblock {\em {PTX: Parallel Thread Execution ISA 2.3}}, 2011.
+
+\bibitem{solidParticle11}
+Mihails Scepanskis and Andris Jakovics.
+\newblock {The Lagrangian Particles in the EM Driven Turbulent Flow with Fine
+  Mesh (the Treatement of solidParticle Library in OpenFOAM)}.
+\newblock Technical report, University of Latvia, 2011.
+
+\bibitem{schillerNaumann}
+L.~Schiller and Z.~Naumann.
+\newblock {\"Uber die grundlegenden Berechnungen bei der
+  Schwerkraftaufbereitung}.
+\newblock {\em Zeitschrift des Vereins Deutscher Ingenieure}, 1933.
+
+\bibitem{netgen}
+Joachim Sch{\"o}berl.
+\newblock {NETGEN - Automatic Mesh Generator}.
+\newblock \url{http://www.hpfem.jku.at/netgen/}, 2009.
+
+\bibitem{ofgpu}
+Symscape.
+\newblock {GPU Linear Solver Library for OpenFOAM}.
+\newblock \url{http://www.symscape.com/gpu-openfoam}, 2011.
+
+\bibitem{videogamesRevenue}
+Matthew Yi.
+\newblock {THEY GOT GAME - Stacks of new releases for hungry video game
+  enthusiasts mean it's boom time for an industry now even bigger than
+  Hollywood}.
+\newblock
+  \url{http://www.sfgate.com/cgi-bin/article.cgi?f=/chronicle/archive/2004/12/18/MNGUOAE36I1.DTL},
+  2004.
+
+\end{thebibliography}

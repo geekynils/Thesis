@@ -1,0 +1,74 @@
+This is BibTeX, Version 0.99d (TeX Live 2011)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: content/title.aux
+A level-1 auxiliary file: content/self.aux
+A level-1 auxiliary file: content/ack.aux
+A level-1 auxiliary file: content/abstract.aux
+A level-1 auxiliary file: content/intro.aux
+A level-1 auxiliary file: content/openFoam.aux
+A level-1 auxiliary file: content/particleTracking.aux
+A level-1 auxiliary file: content/gpu.aux
+A level-1 auxiliary file: content/coding.aux
+A level-1 auxiliary file: content/results.aux
+A level-1 auxiliary file: content/conclusion.aux
+A level-1 auxiliary file: content/summaries.aux
+A level-1 auxiliary file: content/appendix.aux
+The style file: plain.bst
+Database file #1: bib/ref.bib
+Warning--to sort, need author or key in eulerianLagrangian
+Warning--to sort, need author or key in innovativeCFDGrid
+Warning--to sort, need author, editor, or key in ug08
+Warning--to sort, need author, editor, or key in pg08
+Warning--to sort, need author or key in openfoamParallel
+Warning--to sort, need author or key in cusp
+Warning--to sort, need author or key in occupancySpreadsheet
+Warning--to sort, need author or key in thrust
+Warning--to sort, need author or key in octree
+Warning--to sort, need author or key in computeprof
+Warning--to sort, need author or key in fparser
+Warning--empty author and editor in pg08
+Warning--empty author and editor in ug08
+Warning--empty school in nordin00
+You've used 33 entries,
+            2118 wiz_defined-function locations,
+            649 strings with 8340 characters,
+and the built_in function-call counts, 6408 in all, are:
+= -- 620
+> -- 181
+< -- 0
++ -- 83
+- -- 50
+* -- 275
+:= -- 1015
+add.period$ -- 82
+call.type$ -- 33
+change.case$ -- 120
+chr.to.int$ -- 0
+cite$ -- 47
+duplicate$ -- 278
+empty$ -- 676
+format.name$ -- 50
+if$ -- 1413
+int.to.chr$ -- 0
+int.to.str$ -- 33
+missing$ -- 8
+newline$ -- 151
+num.names$ -- 36
+pop$ -- 210
+preamble$ -- 1
+purify$ -- 95
+quote$ -- 0
+skip$ -- 219
+stack$ -- 0
+substring$ -- 188
+swap$ -- 32
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 126
+warning$ -- 14
+while$ -- 38
+width$ -- 35
+write$ -- 299
+(There were 14 warnings)
