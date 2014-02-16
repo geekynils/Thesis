@@ -1,3 +1,0 @@
-Sum a coulmn of numbers
-
-awk '{total = total + $1}END{print total}'

@@ -1,5 +1,0 @@
-Add numbers to lines using awk.
-* Select text using v.
-* Invoke awk to number lines, for example: !awk '{print $0, NR-1}'
-  Puts numbers on the right side of the lines (after a space) starts numbering 
-  with 0 instead of 1. 
