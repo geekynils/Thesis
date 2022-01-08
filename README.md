@@ -1,4 +1,4 @@
 Thesis
 ======
 
-Read it here: http://nightlifelover.github.io/Thesis/
+Read it here: http://geekynils.github.io/Thesis/
